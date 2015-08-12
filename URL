@@ -30,3 +30,48 @@ Standard Code Style
 W3CValidation
 White Space Sanitizer
 
+
+
+
+
+
+
+
+<style>
+            .animation-demo {margin: 100px auto;width: 500px;}
+            .animation-demo .circle {width: 200px;height: 200px;border: 2px solid #cbcbcb;position: relative;border-radius: 50%;}
+            .animation-demo .dot {position: absolute;width: 20px;height: 20px;background: #000;top: 0;left: 50%;border-radius: 50%;
+                animation-name:circle;
+                animation-duration:5s;
+                animation-iteration-count:infinite;
+                transform-origin:50% 100px;
+                margin-left: -10px;}
+
+
+
+            @keyframes circle
+            {
+                0% {
+                    transform:rotate(90deg);
+                    animation-timing-function:ease-in-out;
+                }
+
+                50% {
+                    transform:rotate(240deg);
+                    animation-timing-function:ease-in-out;
+                }
+                100% {
+                    transform:rotate(90deg);
+                    animation-timing-function:ease-in-out;
+                }
+            }
+        </style>
+        
+        
+        <div class="animation-demo">
+            <div class="circle">
+                <div class="dot"></div>
+            </div>
+
+        </div>
+
